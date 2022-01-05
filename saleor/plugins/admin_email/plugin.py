@@ -232,7 +232,7 @@ class AdminEmailPlugin(BasePlugin):
         event_map[event](
             payload,
             asdict(self.config),  # type: ignore
-            self.configuration,
+            self,
         )
 
     @classmethod
